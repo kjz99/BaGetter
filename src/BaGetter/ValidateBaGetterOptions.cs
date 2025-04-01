@@ -51,7 +51,7 @@ public class ValidateBaGetterOptions
         var failures = new List<string>();
 
         if (options.Database == null) failures.Add($"The '{nameof(BaGetterOptions.Database)}' config is required");
-        if (options.Mirror == null) failures.Add($"The '{nameof(BaGetterOptions.Mirror)}' config is required");
+        if (options.Mirrors == null) failures.Add($"The '{nameof(BaGetterOptions.Mirrors)}' config is required");
         if (options.Search == null) failures.Add($"The '{nameof(BaGetterOptions.Search)}' config is required");
         if (options.Storage == null) failures.Add($"The '{nameof(BaGetterOptions.Storage)}' config is required");
 

@@ -67,7 +67,7 @@ public static partial class DependencyInjectionExtensions
         services.AddBaGetterOptions<BaGetterOptions>();
         services.AddBaGetterOptions<DatabaseOptions>(nameof(BaGetterOptions.Database));
         services.AddBaGetterOptions<FileSystemStorageOptions>(nameof(BaGetterOptions.Storage));
-        services.AddBaGetterOptions<MirrorOptions>(nameof(BaGetterOptions.Mirror));
+        services.AddBaGetterOptions<MirrorOptions[]>(nameof(BaGetterOptions.Mirrors));
         services.AddBaGetterOptions<RetentionOptions>(nameof(BaGetterOptions.Retention));
         services.AddBaGetterOptions<SearchOptions>(nameof(BaGetterOptions.Search));
         services.AddBaGetterOptions<StorageOptions>(nameof(BaGetterOptions.Storage));
